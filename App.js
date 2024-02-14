@@ -3,13 +3,15 @@ import { Alert, Button, Image, Pressable, StyleSheet, Text, TextInput, View } fr
 import { Contador } from './Componentes/Componentes';
 import { Boton, Caja } from './Componentes/Atomicos';
 import Calculadora from './Componentes/Calculadora';
+import Productos from './Componentes/productos';
+import PeliculasCatalogo from './Componentes/peliculas';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Encabezado/>
       <Cuerpo/>
-      <Pie/>
+      
       <StatusBar style="auto" />
     </View>
   );
@@ -18,7 +20,7 @@ export default function App() {
 export const Encabezado=()=>{
   return(
     <View style={styles.encabezado}>
-        
+        <Text style={styles.titulo}>Catálogo de Películas</Text>
       </View>
   )
 }
@@ -46,7 +48,7 @@ export const Pie2=(props)=>{
 export const Cuerpo=()=>{
   return(
     <View style={styles.cuerpo}>
-        <Calculadora/>
+        <PeliculasCatalogo />
       </View>
   )
 }
@@ -95,11 +97,16 @@ const styles = StyleSheet.create({
 
   },
   encabezado:{
-    flex:1,
-    flexDirection:'row',
-    alignItems:'center',
-    justifyContent:'space-between',
-    backgroundColor:'red',
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'red',
+  },
+  titulo: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#fff',
   },
   cuerpo:{
     flex:8

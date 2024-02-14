@@ -61,13 +61,6 @@ const PeliculasCatalogo = () => {
     );
 };
 
-const CatalogoDePeliculas = () => (
-    <View>
-        <Text style={styles.catalogoTitle}>Catálogo de Películas</Text>
-        <PeliculasCatalogo />
-    </View>
-);
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -109,12 +102,6 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         paddingHorizontal: 10,
     },
-    catalogoTitle: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        marginBottom: 20,
-    },
 });
 
-export default CatalogoDePeliculas;
+export default PeliculasCatalogo;
