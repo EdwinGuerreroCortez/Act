@@ -5,11 +5,14 @@ import { Boton, Caja } from './Componentes/Atomicos';
 import Calculadora from './Componentes/Calculadora';
 import Productos from './Componentes/productos';
 import PeliculasCatalogo from './Componentes/peliculas';
+import Productos2 from './Componentes/productos copy';
+import Clima from './Componentes/clima';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Encabezado/>
+      
       <Cuerpo/>
       
       <StatusBar style="auto" />
@@ -48,7 +51,7 @@ export const Pie2=(props)=>{
 export const Cuerpo=()=>{
   return(
     <View style={styles.cuerpo}>
-        <PeliculasCatalogo />
+        <Clima/>
       </View>
   )
 }
