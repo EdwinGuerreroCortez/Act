@@ -7,13 +7,19 @@ import Productos from './Componentes/productos';
 import PeliculasCatalogo from './Componentes/peliculas';
 import Productos2 from './Componentes/productos copy';
 import Clima from './Componentes/clima';
-
+import Detalles from './ComponentesResina/detalles';
+import VerificarCodigo from './ComponentesResina/VerificarCodigo';
+import Catalogo from './ComponentesResina/catalo';
+import RecuperarContrasena from './ComponentesResina/RecuperarContrasena';
+import Logueo from './ComponentesResina/login';
+import Registro from './ComponentesResina/registro';
+import CambiarContrasena from './ComponentesResina/ActualizaContraseña';
 
 export default function App() {
   return (
     <View style={styles.container}>
       
-      <Cuerpo/>
+      <VerificarCodigo/>
       
       <StatusBar style="auto" />
     </View>
